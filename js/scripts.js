@@ -4,10 +4,12 @@ $(document).ready(function(){
     var number = parseInt($("input#number").val());
     var result = beepBoop(number);
     $("#result").text(result);
+      event.preventDefault();
   });
-  var beepBoop = function(number){
-      if else(number.charAt(0) === 0 || number.charAt(1) === 0)
-        number +="q";
-        return number;
-    }
-});
+
+  function beepBoop1(number){
+      if (number.charAt(1) === 0)
+        return "q";
+
+  }
+  });
