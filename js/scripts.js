@@ -6,10 +6,16 @@ $(document).ready(function(){
     $("#result").text(result);
       event.preventDefault();
   });
+  var beepBoop = function(number) {
+    if (number === 0){
+      return "boop"
+    }
+    else if (number === 1){
+      return "beep"
+    }
 
-  function beepBoop1(number){
-      if (number.charAt(1) === 0)
-        return "q";
-
-  }
-  });
+    else if (number/3) {
+    return "Im sorry, Im afraid I can not do that."
+    }
+      }
+    });
