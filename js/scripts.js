@@ -6,7 +6,8 @@ $(document).ready(function(){
     $("#result").text(result);
   });
   var beepBoop = function(number){
-    if ((number % 3 === 0))
-      return true;
-  }
+      if else(number.charAt(0) === 0 || number.charAt(1) === 0)
+        number +="q";
+        return number;
+    }
 });
