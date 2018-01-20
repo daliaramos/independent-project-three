@@ -6,10 +6,11 @@ $(document).ready(function(){
     $("#result").text(result);
       event.preventDefault();
   });
-  var beepBoop = function(number) {
-    if (number === 0){
-      number += "boop"
-      return number
+   var beepBoop = function(number) {
+    if (number == 0){
+      number += "boop";
+      return number;
+
     }
     else if (number === 1){
       return "beep"
@@ -18,5 +19,6 @@ $(document).ready(function(){
     else if ((number % 3)===0) {
     return "Im sorry, Im afraid I can not do that."
     }
+
       }
     });
